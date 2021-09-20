@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/javascript/jquery.js"></script>
+        <script src="/javascript/ejs.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/style/capi.css" />
+    <title>Corona-Statistik</title>
+  </head>
+
+  <body>
+    <nav class="capiHead">
+      <div class="home">Home</div>
+      <div class="about">About</div>
+    </nav>
+
+    <section class="capiRegionsContainer">
+          <button data-region="africa" class="africa regionBtn">Afrika</button>
+          <button data-region="asia" class="asia regionBtn">Asien</button>
+          <button data-region="europe" class="europe regionBtn">Europa</button>
+          <div class="slogan"> Corona Statistik</div>
+          <button data-region="americas" class="regionBtn">Nordamerika</button>
+          <button data-region="oceania" class="oceania regionBtn">Oceania</button>
+          <button data-region="global" class="regionBtn">Global</button>
+    </section>
+
+    <section class="capiSearchBoxContainer">
+        <div class="searchBox">
+            <input class="searchCoronaCountries" type="search" placeholder="Search country"></input>
+        </div>
+    </section>
+
+    <section class="capiInformation">
+        <div class="capiCountryContainer">
+
+        </div>
+        <div class="capiSummeryContainer">
+            <div class="TotalRegion">
+                <h1 class="TotalRegionHeader">Region</h1>
+
+            </div>
+
+            <div class="TotalDeaths">
+                <h1 id="deathsInformation">Total: </h1> 
+                <p id="newConfInformation"></p>  
+                <p id="TotalConfirmed"></p>
+                <p id="NewDeaths"></p>
+                  
+            </div>
+            <div class="TotalRecovered">
+              <h1 id="recoveredInformation"> Total:</h1>  
+              <p id="NewRecovered"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="capiFooter">
+        <div class="capiCopy">© By Mikaela Fryklund</div>
+        <div class="capiAdress">mikaela@fryklunda.se</div>
+    </footer>
+    <script src="/javascript/capi.js"></script>
+  </body>
+</html>
