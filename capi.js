@@ -44,7 +44,7 @@ function printCountries(countries, region, search = false) {
     NewRecovered: 0,
     TotalRecovered: 0,
   };
-  var template = loadTemplate("templates/countryinfo.ejs");
+  var template = loadTemplate("countryinfo.ejs");
   $(".capiCountryContainer").html("");
 
   $.each(countries, function (i, field) {
